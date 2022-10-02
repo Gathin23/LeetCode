@@ -28,19 +28,3 @@ struct ListNode* mergeNodes(struct ListNode* head){
     
 
 }
-void create(struct ListNode *start) {
-    struct ListNode *ptr,*temp;
-        temp = (struct ListNode *)malloc(sizeof(struct ListNode));
-        temp->next = NULL;
-
-        if(start == NULL){
-                start = temp;
-        }
-        else{
-                ptr=start;
-                while(ptr->next != NULL){
-                        ptr = ptr->next;
-                }
-                ptr->next = temp;
-        }
-}
